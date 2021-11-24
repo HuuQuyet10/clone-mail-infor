@@ -16,9 +16,9 @@ import {
 import faker from 'faker';
 
 export default class MailGenerator extends Component {
-  componentDidUpdate() {
-    console.log(faker.internet.userName())
-  }
+  // componentDidUpdate() {
+  //   console.log(faker.internet.userName())
+  // }
   state = {
     mailBoxName: faker.internet.userName(),
     mailService: ALL_MAIL_SERVICES[0],
@@ -62,7 +62,7 @@ export default class MailGenerator extends Component {
     const { mailBoxName, mailService } = this.state;
 
     return (
-      <div>
+      <div style={{maxWidth: "1200px", margin: "0px auto"}}>
         <MailDisplay
           mailBoxName={mailBoxName}
           mailServiceDomain={mailService}

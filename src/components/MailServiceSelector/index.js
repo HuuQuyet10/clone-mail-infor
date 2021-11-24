@@ -24,21 +24,31 @@ const MailServiceSelector = (props) => {
       color: "black",
       opactiy: 1,
       lineHeight: 2,
-      width: 250,
+      width: 500,
+      height: 53,
+      border: "1px solid",
+      textAlign: "center",
       cursor: "pointer",
+      color: "white"
     }),
     menu: (provided, state) => ({
       ...provided,
-      width: 250,
+      width: 500,
+      height: 53,
+      zIndex: "9999",
       background: "rgba(256, 256, 256, 1)",
       cursor: "pointer",
     }),
     control: () => ({
-      width: 250,
+      width: 500,
+      height: 53,
+      border: "1px solid",
+      textAlign: "center",
       display: "flex",
       justifyContent: "center",
       lineHeight: 4,
       cursor: "pointer",
+      color: "white"
     }),
     singleValue: (provided, state) => {
       const transition = "opacity 300ms";
@@ -46,9 +56,8 @@ const MailServiceSelector = (props) => {
       return { ...provided, opacity, transition };
     },
   };
-
   return (
-    <div>
+    <div >
       <Select
         styles={SELECT_STYLE_CONFIG}
         isSearchable

@@ -10,13 +10,13 @@ import Routerwweb from "./containers/generatorListUserName";
 const Main = () => {
     return (
         <BrowserRouter>
-        {/* <StyledApp> */}
+        <div>
             <Title titleText={TITLE_TEXT} />
             <MailGenerator />
             <AttributionMessage />
             <ToastContainer autoClose={4000} />
             <Routerwweb />
-          {/* </StyledApp> */}
+          </div>
       </BrowserRouter>
     );
 }

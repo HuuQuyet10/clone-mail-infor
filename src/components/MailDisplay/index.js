@@ -13,13 +13,13 @@ export default function MailDisplay(props) {
   } = props;
 
   return (
-    <div>
+    <div style={{display: "flex", marginTop: "30px", color: "black"}}>
       <MailboxNameInput
         key="mailboxNameInput"
         mailBoxName={mailBoxName}
         changeMailBoxName={changeMailBoxName}
       />
-      <h2 style={{flexGrow: "1" }}>@</h2>
+      <h2 style={{ padding: "0px 16px", marginTop: "10px", marginBottom: "0px"}}>@</h2>
       <MailServiceSelector
         key="mailServiceSelector"
         mailServiceDomain={mailServiceDomain}

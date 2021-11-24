@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+import Main from "./Main";
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
-import Main from "./Main";
+import 'antd/dist/antd.css';
 
 function App() {
   return (

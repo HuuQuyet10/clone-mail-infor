@@ -7,7 +7,7 @@ import { getMessage } from "../../utils/translationUtils";
 const Action = (props) => {
   const { actionCallback, messageId, emoji, emojiLabel } = props;
   return (
-    <button onClick={actionCallback}>
+    <button onClick={actionCallback} style={{width: "300px", color: "#ffffff", backgroundColor: "darksalmon", fontSize: "26px", marginRight: "10px", border: "none", borderRadius: "13px", cursor: "pointer"}}>
       {getMessage(messageId)}{" "}
       <span role="img" aria-label={emojiLabel}>
         {emoji}
@@ -45,7 +45,7 @@ const MailActions = (props) => {
   ];
 
   return (
-    <div>
+    <div style={{margin: "30px 0px"}}>
       {ACTION_BUTTONS_CONFIG.map((config) => (
         <Action
           key={config.messageId}

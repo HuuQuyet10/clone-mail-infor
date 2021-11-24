@@ -15,7 +15,7 @@ const MailServiceAttribution = ({ link, name }) => (
 
 export default function AttributionMessage() {
   return (
-    <h4>
+    <h4 style={{textAlign: 'center'}}>
       Thanks to{" "}
       {ALL_MAIL_SERVICES.map((serviceKey) => (
         <MailServiceAttribution

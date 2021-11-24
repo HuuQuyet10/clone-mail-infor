@@ -9,6 +9,7 @@ export default function MailboxNameInput(props) {
       value={mailBoxName}
       onChange={changeMailBoxName}
       readOnly
+      style={{fontSize: "20px", textAlign: "center"}}
     />
   );
 }
